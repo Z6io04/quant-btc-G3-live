@@ -1,0 +1,63 @@
+{
+  "description": "Hypothetical service startup on 2025-09-18 at 08:55 Beijing, disconnected immediately until 09:15, then continuously online. Uses real historical prices and settled funding. This diagnostic only demonstrates scheduling; it is not another optimized return window, actual outage or real fill.",
+  "rows": [
+    {
+      "version": "F3",
+      "startup_at": 1758156900000,
+      "recovery_at": 1758158100000,
+      "signal_at": 1758243600000,
+      "model_execution_at": 1758243660000,
+      "signal_utc": "2025-09-19T01:00:00+00:00",
+      "model_execution_utc": "2025-09-19T01:01:00+00:00",
+      "minutes_from_recovery": 1426,
+      "entry_checks": 1,
+      "notional_usd": "20",
+      "fresh_signal": true,
+      "rechecked_at_execution": true,
+      "signal_frame": {
+        "daily_rate": "0.0001819142969085",
+        "last_rate": "0.0000300510463147",
+        "last_settlement": 1758240000000,
+        "observations": 42,
+        "known_at": 1758243600000
+      },
+      "recheck_frame": {
+        "daily_rate": "0.0001819142969085",
+        "last_rate": "0.0000300510463147",
+        "last_settlement": 1758240000000,
+        "observations": 42,
+        "known_at": 1758243660000
+      }
+    },
+    {
+      "version": "G3",
+      "startup_at": 1758156900000,
+      "recovery_at": 1758158100000,
+      "signal_at": 1758158100000,
+      "model_execution_at": 1758158160000,
+      "signal_utc": "2025-09-18T01:15:00+00:00",
+      "model_execution_utc": "2025-09-18T01:16:00+00:00",
+      "minutes_from_recovery": 1,
+      "entry_checks": 1,
+      "notional_usd": "20",
+      "fresh_signal": true,
+      "rechecked_at_execution": true,
+      "signal_frame": {
+        "daily_rate": "0.0001710344388345071428571428571",
+        "last_rate": "0.000069128912416",
+        "last_settlement": 1758153600000,
+        "observations": 42,
+        "known_at": 1758158100000
+      },
+      "recheck_frame": {
+        "daily_rate": "0.0001710344388345071428571428571",
+        "last_rate": "0.000069128912416",
+        "last_settlement": 1758153600000,
+        "observations": 42,
+        "known_at": 1758158160000
+      }
+    }
+  ],
+  "passed": true,
+  "plan_sha256": "a8246201e839e557b103de70575889133d650807056235c7ad0cf9201d406e0a"
+}

@@ -1,0 +1,19 @@
+[Unit]
+Description=G3 live inverse funding strategy
+Wants=network-online.target mihomo-proxy.service
+After=network-online.target mihomo-proxy.service
+
+[Service]
+Type=simple
+WorkingDirectory=%h/btc-G3-live
+ExecStart=/usr/bin/python3 -u %h/btc-G3-live/launch.py run
+Restart=on-failure
+RestartSec=30
+TimeoutStopSec=180
+KillSignal=SIGTERM
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=default.target

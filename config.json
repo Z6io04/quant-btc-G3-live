@@ -1,0 +1,16 @@
+{
+  "version": "G3-live-1",
+  "mode": "live",
+  "origin": "https://openapi.okx.com",
+  "proxy": "http://127.0.0.1:17890",
+  "capital_usdt": null,
+  "max_loss_usdt": null,
+  "leverage": 2,
+  "poll_seconds": 10,
+  "quote_age_seconds": 5,
+  "max_slippage_bps": 3,
+  "order_ttl_seconds": 15,
+  "max_unhedged_seconds": 60,
+  "signal_ttl_seconds": 60,
+  "warmup_days": 16
+}

@@ -1,0 +1,18 @@
+[Unit]
+Description=Loopback-only Mihomo proxy for local trading programs
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/mihomo/private
+ExecStart=%h/mihomo/bin/mihomo -d %h/mihomo/private -f %h/mihomo/private/config.yaml
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+StandardOutput=append:%h/mihomo/private/proxy.log
+StandardError=append:%h/mihomo/private/proxy.log
+
+[Install]
+WantedBy=default.target

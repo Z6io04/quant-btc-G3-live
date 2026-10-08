@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-10-08T07:19:13.865024+00:00",
+  "reason": "Parent review identified the user original cumulative loss limit as 10 USDT. Preserve that value in both versions. The first attempted code edit failed because of an incorrect working directory; its run was immediately interrupted during initialization and produced no scenario result. Earlier 1.25 USDT draft and aborted manifest/log are preserved.",
+  "previous_design_sha256": "049f5a718f54279d67dd08172e63c6e58a62d512b1e8a3382edc86df973e4321",
+  "previous_design": {
+    "created_utc": "2026-10-08T07:10:16.548362+00:00",
+    "frozen_before_running": true,
+    "capital_usdt": "25",
+    "instruments": [
+      "BTC-USDT",
+      "BTC-USD-SWAP"
+    ],
+    "window_utc": [
+      "2025-09-17T16:00:00Z",
+      "2026-09-17T16:00:00Z"
+    ],
+    "versions": [
+      "F3",
+      "G3"
+    ],
+    "scenarios": [
+      "normal",
+      "monday_0855_0915_bjt_outage",
+      "daily_0855_0915_bjt_outage",
+      "normal_cost2"
+    ],
+    "scenario_notes": {
+      "outage": "Assumed application disconnection, not historical exchange evidence. Offline interval [08:55,09:15) Beijing. Funding accrues at exchange; no new decisions or fills during blackout. Discard pending entry on disconnect; reconnect uses a fresh signal.",
+      "cost2": "Both spot/swap fee rates and adverse execution slippage doubled; threshold costs also doubled."
+    },
+    "execution": "Causal minute model using completed minute for evaluation; entry due +1 minute and fresh funding/cost/sizing recheck; exit due +1 minute as common historical broker approximation. Two-leg same-minute fills assumed. Historical bid/ask absent; trade prices plus adverse slippage and tick rounding proxy. No private API or live orders.",
+    "rules": "Use unchanged production F3 strategy economic pure functions; scheduling is the only F3/G3 difference. Retain daily 09:00 exit review, 168h minimum hold, 24h cooldown, 3 bad days, loss/drawdown/margin/residual limits, neutral treasury. Budget remains capped at min(25, equity).",
+    "funding": "Settled BTC-USD-SWAP rates only, available +1 minute, preceding settlement anchors full 14-day history; no USDT swap funding substitution. Positive funding at exact entry/exit boundary conservatively not credited; negative exit boundary funding charged.",
+    "mark": "Only hourly mark OHLC available. Hour opens are used at exact hour/settlement aliases; intervening completed swap close is a causal proxy. No intra-hour future high/low/close used.",
+    "limitations": [
+      "Public historical price model, not real fills or profitability proof.",
+      "Previously researched history, not independent holdout.",
+      "Contemporary lot/tick/contract specs applied historically.",
+      "No historical order book, partial fills, market impact, minute marks, funding bill timestamps, actual outages or liquidations.",
+      "USD/USDT parity assumed.",
+      "Model risk actions delayed one minute; real executor uses polling and actual exchange state.",
+      "Mark limitation prevents minute-accurate liquidation reconstruction."
+    ],
+    "no_parameter_search": true,
+    "window_bjt": [
+      "2025-09-18T00:00:00+08:00",
+      "2026-09-18T00:00:00+08:00"
+    ],
+    "design_amendment": "design-amendment.json",
+    "model_max_loss_usdt": "1.25",
+    "model_max_loss_note": "Production config requires an explicit total-loss limit. Model uses 1.25 USDT = 5% of initial 25 USDT, which is no weaker than the already-fixed 5% peak drawdown halt. This is a comparison-model setting, not a live user preference. No simulation returns run before this specification."
+  },
+  "model_max_loss_usdt": "10",
+  "no_simulation_results_before_amendment": true
+}

@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "cases": 8,
+  "checks": [
+    {
+      "id": "F3-normal",
+      "closed_groups": 1,
+      "ledger_and_timing_assertions": 2199,
+      "result_sha256": "9d4a8d6692a0f4ea7862a60a443878d6ad56639f0d1cf2367fcbf8402213e330",
+      "passed": true
+    },
+    {
+      "id": "G3-normal",
+      "closed_groups": 1,
+      "ledger_and_timing_assertions": 2201,
+      "result_sha256": "9cd80aaa2d35d345f59e56a1073e17b247308cf84c2fac59b0b7ec3ee415e63f",
+      "passed": true
+    },
+    {
+      "id": "F3-monday_0855_0915_bjt_outage",
+      "closed_groups": 1,
+      "ledger_and_timing_assertions": 2199,
+      "result_sha256": "2543616f051bcbdc61e688e41c124564a56ae7bd5a06d78f016c0e522bf2926d",
+      "passed": true
+    },
+    {
+      "id": "G3-monday_0855_0915_bjt_outage",
+      "closed_groups": 1,
+      "ledger_and_timing_assertions": 2201,
+      "result_sha256": "adb70b451dd781d363e229c3f3bf317499b8345fdf98628895619162b2c5d4c4",
+      "passed": true
+    },
+    {
+      "id": "F3-daily_0855_0915_bjt_outage",
+      "closed_groups": 0,
+      "ledger_and_timing_assertions": 2,
+      "result_sha256": "05391fbb019d6f71a57eb76d61d88c515abd4baaa7fb3bc2a905f9ed94e8ad40",
+      "passed": true
+    },
+    {
+      "id": "G3-daily_0855_0915_bjt_outage",
+      "closed_groups": 1,
+      "ledger_and_timing_assertions": 2201,
+      "result_sha256": "aa495024ac1d6ce3330fba7cf341238a98dc0eaa34683dcc0b1d150cf34a37fa",
+      "passed": true
+    },
+    {
+      "id": "F3-normal_cost2",
+      "closed_groups": 1,
+      "ledger_and_timing_assertions": 2199,
+      "result_sha256": "4a54e3c1592e6080190a0592dd57e845b8ed341ba7729053ce4e29874b7582ad",
+      "passed": true
+    },
+    {
+      "id": "G3-normal_cost2",
+      "closed_groups": 1,
+      "ledger_and_timing_assertions": 2201,
+      "result_sha256": "de4bd0d47c642915d3707e6cb42167036a1a6f9247562533614e8d6e2b6483e3",
+      "passed": true
+    }
+  ],
+  "source_sha256": "7a747fba6133f5e2cdff1da8ff3ad0ff141f4f001ca98db9b7eda60b7c42cec7",
+  "scope": "Independent reconstruction of each BTC/USDT ledger from modeled executions and settlement rows; timing/data availability and outage entry checks. Does not validate unknown historical quotes, minute marks, private settlement bills or actual fills."
+}

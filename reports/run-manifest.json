@@ -1,0 +1,60 @@
+{
+  "design_sha256": "94b13a52e0f5928d1625a3438e85823323d8b2b9ccf83744177fff4411697764",
+  "source_hashes": {
+    "backtesting/reference_f3.py": "d31b4bbe89c2c2e2a39e602d2329eb905143929d67c80ca8334d4f6b0cf86244",
+    "backtesting/compare.py": "1dff1feb21484b248dc02112c2f74f1b15ad75448b9be2939ee8004d674d509d",
+    "g3core/strategy.py": "8994968900041c131bb81e049df0e0a4a8cfc96b9079ae66b324d785cde22e36",
+    "reports/design.json": "94b13a52e0f5928d1625a3438e85823323d8b2b9ccf83744177fff4411697764"
+  },
+  "data_manifest_sha256": "d74f3ae2afa2bec3180212e2fe42113ef366b279ded2d6b81309c5f28de047dd",
+  "used_data_hashes": {
+    "recent/spot.csv.gz": "4b58c6731602b4b656856d8a2ba152a5fbcca9c5a159fa8f9b8ea541368fba58",
+    "recent/swap.csv.gz": "be45a1e35cd5dd938a0895e90cf965620302f57d5c9ca4118ce7559dc7fd5b31",
+    "recent/funding.json": "332c544bc065ec0195ad6fd8f4990548463d4c75b4779c96f6c5db392ef9bf0a",
+    "recent/mark.json": "f8acac65fda79c7b9c58b03d48c3fb8b76e3e7c7c264eb7867dd6318e698ccb9",
+    "recent/candles-quality.json": "2302f25f04e149c577e3fbf3909a5701090eaa7bc963b021b43f37d9db822773",
+    "recent/funding-quality.json": "8ed8b86d8dc6332f1df76bcf599149fc79ec9883c25e107573125e2e480887b6",
+    "recent/mark-quality.json": "4cd1f894184a3c6ac4b9076d41dbf8dc7bf85257af80facdc91957f1bec5007e",
+    "spot-spec.json": "773dc200e2d493b0a862fccfcc42593aae3e6c05c1749a4116d6b94754e2bef0",
+    "swap-spec.json": "200784f94ece3b1def831354ec950f08b76867708944846cb56fdee1308dfead",
+    "tiers.json": "fdab94ea83410b7e3636fa409f672f1b1107dfb2a3b406f9f3519df67de186ce"
+  },
+  "cases": [
+    [
+      "F3",
+      "normal"
+    ],
+    [
+      "G3",
+      "normal"
+    ],
+    [
+      "F3",
+      "monday_0855_0915_bjt_outage"
+    ],
+    [
+      "G3",
+      "monday_0855_0915_bjt_outage"
+    ],
+    [
+      "F3",
+      "daily_0855_0915_bjt_outage"
+    ],
+    [
+      "G3",
+      "daily_0855_0915_bjt_outage"
+    ],
+    [
+      "F3",
+      "normal_cost2"
+    ],
+    [
+      "G3",
+      "normal_cost2"
+    ]
+  ],
+  "execution_python": "python3 (original host path redacted for public release)",
+  "created_utc": "2026-10-08T07:23:12.084056+00:00",
+  "data_root": "<historical-data-directory>",
+  "distribution_note": "Only local filesystem paths were redacted for the GitHub package. Numerical results and input/source hashes were not changed."
+}

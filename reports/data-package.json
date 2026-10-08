@@ -1,0 +1,22 @@
+{
+  "archive": "G3-backtest-data.zip",
+  "bytes": 19509671,
+  "sha256": "330fd0f1038c763c73d4f9e504ebcd1779c8639c0677cad04f2f5a58a68ca7fc",
+  "root_inside_archive": "g3-backtest-data",
+  "source_original_manifest_sha256": "d74f3ae2afa2bec3180212e2fe42113ef366b279ded2d6b81309c5f28de047dd",
+  "original_manifest_preserved_verbatim": true,
+  "included_original_files": [
+    "manifest.json",
+    "recent/spot.csv.gz",
+    "recent/swap.csv.gz",
+    "recent/funding.json",
+    "recent/mark.json",
+    "recent/candles-quality.json",
+    "recent/funding-quality.json",
+    "recent/mark-quality.json",
+    "spot-spec.json",
+    "swap-spec.json",
+    "tiers.json"
+  ],
+  "note": "Only files used by this recent-window study are included. The source manifest retains hashes of other historical windows for provenance; those unused windows are deliberately not copied."
+}

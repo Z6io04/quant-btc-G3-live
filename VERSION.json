@@ -1,0 +1,21 @@
+{
+  "version": "G3-live-1",
+  "release_variant": "anytime-minute-entry-manual-capital-sync",
+  "release_date": "2026-10-08",
+  "mode": "live",
+  "default_armed": false,
+  "capital_limit_usdt": null,
+  "comparison_capital_usdt": "25",
+  "entry_schedule": "fresh complete minute, 24 hours; one-minute delay and revalidation; no outage replay",
+  "exit_schedule": "F3 unchanged; funding deterioration only at 09:00 Beijing daily",
+  "initial_capital_usdt": "required before activation",
+  "max_loss_usdt": "required before activation; unchanged by top-up",
+  "topup_policy": "manual sync while service stopped and flat; verified incoming USDT trading-account bills only",
+  "strategy": "BTC-USDT spot plus short BTC-USD-SWAP inverse",
+  "python_minimum": "3.11",
+  "dependencies": "Python standard library",
+  "distribution_revision": "github-20261008.2",
+  "trading_core_changed": false,
+  "proxy_revision": "ech-anytls-root-path-fixed",
+  "utilities": "read-only API diagnosis; controlled F3 retirement; local Mihomo setup"
+}

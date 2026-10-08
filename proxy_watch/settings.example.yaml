@@ -1,0 +1,21 @@
+# Copy to settings.yaml and edit locally. Never commit credentials or approved IPs.
+# Settings.load expands ~ for the account actually running the watcher.
+mihomo_binary: ~/mihomo/bin/mihomo
+live_config: ~/mihomo/private/config.yaml
+subscription: ~/mihomo-subscription.yaml
+state_dir: ~/mihomo/private/proxy-watch
+service: mihomo-proxy.service
+interval_seconds: 60
+failure_threshold: 3
+full_scan_cooldown_seconds: 3600  # May use 7200 for a two-hour full-scan cooldown.
+candidate_port: 17891
+probe_timeout_seconds: 8
+candidate_startup_seconds: 8
+max_time_skew_seconds: 120
+okx_time_url: https://openapi.okx.com/api/v5/public/time
+ip_url: https://api.ipify.org?format=json
+# Empty keeps monitoring available but prevents automatic switching.
+# This list gates ipify observations ONLY. ipify IPv4 can differ from OKX IPv6.
+# Separately register each node's actual OKX egress for EVERY API key sharing 17890,
+# and complete authenticated read-only account checks before enabling switching.
+allowed_ips: []

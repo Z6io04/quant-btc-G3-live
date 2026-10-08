@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-08T07:25:31.396495+00:00",
+  "source_sha256": "6226cd46214043c66c658ce6a0085dbdb580112a821b04dd7b202298e91f4717",
+  "data_manifest_sha256": "d74f3ae2afa2bec3180212e2fe42113ef366b279ded2d6b81309c5f28de047dd",
+  "startup_bjt": "2025-09-18T08:55:00+08:00",
+  "recovery_bjt": "2025-09-18T09:15:00+08:00",
+  "purpose": "Predefined timing demonstration without return evaluation or parameter fitting",
+  "capital_usdt": "25",
+  "versions": [
+    "F3",
+    "G3"
+  ]
+}

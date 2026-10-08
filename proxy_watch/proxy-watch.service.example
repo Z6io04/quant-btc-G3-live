@@ -1,0 +1,15 @@
+[Unit]
+Description=Optional G3 local Mihomo proxy watcher
+After=mihomo-proxy.service
+
+[Service]
+Type=simple
+WorkingDirectory=%h/btc-G3-live/proxy_watch
+ExecStart=%h/btc-G3-live/proxy_watch/.venv/bin/python -B %h/btc-G3-live/proxy_watch/proxy_watch.py run --config %h/btc-G3-live/proxy_watch/settings.yaml
+Restart=on-failure
+RestartSec=60
+UMask=0077
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

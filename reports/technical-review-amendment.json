@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-08T07:23:01.716419+00:00",
+  "previous_run_manifest_sha256": "7124785e130e351664a7ca4bddb6b6e871a786b3f5e17dcdc467e4b67ab69617",
+  "reason": "Independent code review technical corrections; all 8 cases and economic parameters retained.",
+  "changes": [
+    "End-of-sample liquidation uses END timestamp because last candle close becomes known at END; price unchanged.",
+    "Preserve delayed treasury intention across assumed network outage and recheck conditions on reconnect, matching production network-disconnect semantics. A process restart would discard it, but restart is not the defined scenario.",
+    "Allow verified replays on another Python executable path without changing frozen data/source/case hashes; record actual executable in validation.",
+    "Expose treasury transaction count in summary."
+  ],
+  "previous_results_retained": "pre-review-results",
+  "no_parameter_selection": true
+}

@@ -1,0 +1,23 @@
+{
+  "economic_function_source_parity": true,
+  "funding_cache_parity_points": 4380,
+  "economic_rules_parity": true,
+  "case_count": 8,
+  "execution_python": "python3 (original host path redacted for public release)",
+  "elapsed_seconds": 62.48772483301582,
+  "used_input_hashes_verified": true,
+  "source_manifest_preserved_verbatim": true,
+  "run_manifest_sha256": "1f6795c65623c61231d9c0ff2f1a40e91b2b96ce545a7c17fde7aee8c16a4a2f",
+  "result_hashes": {
+    "F3-normal": "9d4a8d6692a0f4ea7862a60a443878d6ad56639f0d1cf2367fcbf8402213e330",
+    "G3-normal": "9cd80aaa2d35d345f59e56a1073e17b247308cf84c2fac59b0b7ec3ee415e63f",
+    "F3-monday_0855_0915_bjt_outage": "2543616f051bcbdc61e688e41c124564a56ae7bd5a06d78f016c0e522bf2926d",
+    "G3-monday_0855_0915_bjt_outage": "adb70b451dd781d363e229c3f3bf317499b8345fdf98628895619162b2c5d4c4",
+    "F3-daily_0855_0915_bjt_outage": "05391fbb019d6f71a57eb76d61d88c515abd4baaa7fb3bc2a905f9ed94e8ad40",
+    "G3-daily_0855_0915_bjt_outage": "aa495024ac1d6ce3330fba7cf341238a98dc0eaa34683dcc0b1d150cf34a37fa",
+    "F3-normal_cost2": "4a54e3c1592e6080190a0592dd57e845b8ed341ba7729053ce4e29874b7582ad",
+    "G3-normal_cost2": "de4bd0d47c642915d3707e6cb42167036a1a6f9247562533614e8d6e2b6483e3"
+  },
+  "warning": "Model checks do not validate real fills, minute marks, exchange liquidation or future performance.",
+  "distribution_note": "Only local filesystem paths were redacted for the GitHub package. Numerical results and input/source hashes were not changed."
+}
